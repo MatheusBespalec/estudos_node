@@ -1,0 +1,28 @@
+Sobre versões
+
+1.    5.    2
+major minor path
+
+path -> apenas correção de bugs
+minor -> foram adicionadas novas funcionalidades, mas não houve alteração nas anteriores, tudo continuara 
+funcionando normalmente
+major -> foram feitas atualizações onde houve mudança no modo como certas funcionalidades são utilizadas
+
+^2.5.7 -> '^' significa que quando houver atualizações o minor e path podem ser atualizados, caso não seja informado o '^'
+quando houver um opdate a versão ira se manter
+
+/----------------------------------/
+
+Sobre dependências
+
+Quando definimos algo como dependências de desenvolvedor significa que não sera utilizado em produção.
+
+Um exemplo seria o webpack, os modulos do webpack não são utilizados em produção, la apenas utilizamos o bundle.js, os
+módulos do webpack são desnecessários
+
+Compandos npm
+
+npm update -> atualiza os pacotes
+npm outdated -> mostra os pacotes desatualizados
+npm ls -> mostra os pacotes instalados, podemos colocar o --depth para mostrar as dependências dos pacotes
+npm uninstal <pacote> -> desistala um pacote
