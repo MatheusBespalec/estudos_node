@@ -1,0 +1,12 @@
+<%- include('templates/header') %>
+<body>
+    <h1><%= text %></h1>
+    <h1><%- text %></h1>
+
+    <ul>
+        <% for (let num of numbers) { %>
+            <li><%= num %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
