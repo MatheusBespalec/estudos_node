@@ -10,7 +10,6 @@ const routes = require('./routes')
 const helmet = require('helmet')
 const csrf = require('csurf')
 const { checkCsrf, csrfToken } = require('./src/middlewares/csrf')
-const { use } = require('./routes')
 
 mongoose.connect(process.env.CONNECTION_STRING)
     .then(() => app.emit('connect_mongo'))
